@@ -1,15 +1,59 @@
 <h2>Add a new Celebrity!</h2>
 
-<form action="/celebrities/create" method="POST">
+<form
+  action="/celebrities/create"
+  method="POST"
+  class="column is-4 is-centered has-text-centered"
+  style="margin: auto"
+>
 
-  <label for="name">Name</label>
-  <input type="text" name="name" />
+  <div class="field">
+    <label for="name">Name</label>
 
-  <label for="occupation">Occupation</label>
-  <input type="text" name="occupation" />
+    <div class="control has-icons-left has-icons-right">
+      <input type="text" name="name" />
+    </div>
+    <span class="icon is-small is-left">
+      <i></i>
+    </span>
 
-  <label for="catchPhrase">Catch Phrase</label>
-  <input type="text" name="catchPhrase" />
+    <span class="icon is-small is-right">
+      <i></i>
+    </span>
+  </div>
 
-  <button type="submit">Create a Celebrity!</button>
+  <div class="field">
+    <label for="occupation">OccupationGenre</label>
+
+    <div class="control has-icons-left has-icons-right">
+      <input type="text" name="occupation" />
+
+    </div>
+    <span class="icon is-small is-left">
+      <i></i>
+    </span>
+
+    <span class="icon is-small is-right">
+      <i></i>
+    </span>
+  </div>
+
+  <div class="field">
+    <label for="catchPhrase">Catch Phrase</label>
+
+    <div class="control has-icons-left has-icons-right">
+      <input type="text" name="catchPhrase" />
+
+    </div>
+    <span class="icon is-small is-left">
+      <i></i>
+    </span>
+
+    <span class="icon is-small is-right">
+      <i></i>
+    </span>
+  </div>
+
+  <button class="button is-rounded is-dark" type="submit">Create a Celebrity!</button>
+
 </form>

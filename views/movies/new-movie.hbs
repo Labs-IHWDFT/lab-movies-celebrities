@@ -1,15 +1,58 @@
 <h2>Add a new Movie!</h2>
 
-<form action="/movies/create" method="POST">
+<form
+  action="/movies/create"
+  method="POST"
+  class="column is-4 is-centered has-text-centered"
+  style="margin: auto"
+>
 
-  <label for="title">Title</label>
-  <input type="text" name="title" />
+  <div class="field">
+    <label for="title">Title</label>
 
-  <label for="genre">Genre</label>
-  <input type="text" name="genre" />
+    <div class="control has-icons-left has-icons-right">
+      <input type="text" name="title" />
+    </div>
+    <span class="icon is-small is-left">
+      <i></i>
+    </span>
 
-  <label for="plot">Plot</label>
-  <input type="text" name="plot" />
+    <span class="icon is-small is-right">
+      <i></i>
+    </span>
+  </div>
+
+  <div class="field">
+    <label for="genre">Genre</label>
+
+    <div class="control has-icons-left has-icons-right">
+      <input type="text" name="genre" />
+
+    </div>
+    <span class="icon is-small is-left">
+      <i></i>
+    </span>
+
+    <span class="icon is-small is-right">
+      <i></i>
+    </span>
+  </div>
+
+  <div class="field">
+    <label for="plot">Plot</label>
+
+    <div class="control has-icons-left has-icons-right">
+      <input type="text" name="plot" />
+
+    </div>
+    <span class="icon is-small is-left">
+      <i></i>
+    </span>
+
+    <span class="icon is-small is-right">
+      <i></i>
+    </span>
+  </div>
 
   {{!-- <select name="cast" multiple>
     {{#each allCelebs}}
@@ -24,5 +67,5 @@
     {{/each}}
   </div>
 
-  <button type="submit">Create a new movie!</button>
+  <button class="button is-rounded is-dark" type="submit">Create a new movie!</button>
 </form>
