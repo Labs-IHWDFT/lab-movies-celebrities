@@ -1,59 +1,64 @@
-<h2>Add a new Celebrity!</h2>
+<div class="container has-text-centered">
+  <h1 class="title is-1">New Celebrity Form</h1>
+</div>
 
-<form
-  action="/celebrities/create"
-  method="POST"
-  class="column is-4 is-centered has-text-centered"
-  style="margin: auto"
->
+<div class="section is-centered">
 
-  <div class="field">
-    <label for="name">Name</label>
+  <form
+    action="/celebrities/create"
+    method="POST"
+    class="column is-4 is-centered has-text-centered"
+    style="margin: auto"
+  >
 
-    <div class="control has-icons-left has-icons-right">
-      <input type="text" name="name" />
+    <div class="field">
+      <label for="name">Name</label>
+
+      <div class="control has-icons-left has-icons-right">
+        <input type="text" name="name" />
+      </div>
+      <span class="icon is-small is-left">
+        <i></i>
+      </span>
+
+      <span class="icon is-small is-right">
+        <i></i>
+      </span>
     </div>
-    <span class="icon is-small is-left">
-      <i></i>
-    </span>
 
-    <span class="icon is-small is-right">
-      <i></i>
-    </span>
-  </div>
+    <div class="field">
+      <label for="occupation">OccupationGenre</label>
 
-  <div class="field">
-    <label for="occupation">OccupationGenre</label>
+      <div class="control has-icons-left has-icons-right">
+        <input type="text" name="occupation" />
 
-    <div class="control has-icons-left has-icons-right">
-      <input type="text" name="occupation" />
+      </div>
+      <span class="icon is-small is-left">
+        <i></i>
+      </span>
 
+      <span class="icon is-small is-right">
+        <i></i>
+      </span>
     </div>
-    <span class="icon is-small is-left">
-      <i></i>
-    </span>
 
-    <span class="icon is-small is-right">
-      <i></i>
-    </span>
-  </div>
+    <div class="field">
+      <label for="catchPhrase">Catch Phrase</label>
 
-  <div class="field">
-    <label for="catchPhrase">Catch Phrase</label>
+      <div class="control has-icons-left has-icons-right">
+        <input type="text" name="catchPhrase" />
 
-    <div class="control has-icons-left has-icons-right">
-      <input type="text" name="catchPhrase" />
+      </div>
+      <span class="icon is-small is-left">
+        <i></i>
+      </span>
 
+      <span class="icon is-small is-right">
+        <i></i>
+      </span>
     </div>
-    <span class="icon is-small is-left">
-      <i></i>
-    </span>
 
-    <span class="icon is-small is-right">
-      <i></i>
-    </span>
-  </div>
+    <button class="button is-rounded is-dark" type="submit">Create a Celebrity!</button>
 
-  <button class="button is-rounded is-dark" type="submit">Create a Celebrity!</button>
-
-</form>
+  </form>
+</div>
